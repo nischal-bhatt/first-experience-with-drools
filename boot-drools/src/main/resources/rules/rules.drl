@@ -19,10 +19,12 @@ rule "Offer for parnali"
 		productObject: Product(typekwando=="parnali")
 	then
 		productObject.setDiscount(98);
+		System.out.println(drools.getRule().getName());
 	end
 rule "Offer for parnali8"
 	when 
 		productObject: Product(typekwando=="parnali")
 	then
 		productObject.setDiscount(986);
+		System.out.println(drools.getRule().getName());
 	end	
