@@ -10,7 +10,7 @@ rule "Offer for Diamond"
 	   end 
 rule "Offer for Gold"
 	when 
-		productObject: Product(typekwando=="mutata")
+		productObject: Product(typekwando=="mutataz")
 	then
 		productObject.setDiscount(553);
 	end
