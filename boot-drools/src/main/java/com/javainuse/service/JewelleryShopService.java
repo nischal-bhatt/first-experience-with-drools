@@ -22,7 +22,8 @@ public class JewelleryShopService {
 		KieSession kieSession = kieContainer.newKieSession("rulesSession");
 		//product.setTypekwando("mutata");
 		kieSession.insert(product);
-		kieSession.fireAllRules();
+		int numberOfTimesFired = kieSession.fireAllRules();
+		System.out.println(numberOfTimesFired);
 		kieSession.dispose();
 		return product;
 	}

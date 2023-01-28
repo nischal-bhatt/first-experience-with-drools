@@ -20,3 +20,9 @@ rule "Offer for parnali"
 	then
 		productObject.setDiscount(98);
 	end
+rule "Offer for parnali8"
+	when 
+		productObject: Product(typekwando=="parnali")
+	then
+		productObject.setDiscount(986);
+	end	
